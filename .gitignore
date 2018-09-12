@@ -1,0 +1,23 @@
+# Java Files #
+*.class
+
+# Package Files #
+*.war
+*.ear
+
+# Eclipse files #
+.settings
+.classpath
+.project
+
+# IntelliJ files #
+.idea
+local.properties
+*.iml
+out
+
+# Gradle files #
+.gradle
+build
+
+target
