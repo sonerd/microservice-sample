@@ -1,0 +1,23 @@
+version: '3.6'
+services:
+  # the service name is used as hostname when connecting to mongo from our app
+  my-mongodb:
+    image: mongo:latest
+    #environment:
+     # - MONGO_INITDB_DATABASE=products
+      #- MONGO_INITDB_ROOT_USERNAME=root
+      #- MONGO_INITDB_ROOT_PASSWORD=root
+    ports:
+    - 27017:27017
+    volumes:
+    # named volumes
+    - mongodb:/data/db
+    networks:
+    - mongo_net
+
+volumes:
+  mongodb:
+
+networks:
+  mongo_net:
+    driver: bridge

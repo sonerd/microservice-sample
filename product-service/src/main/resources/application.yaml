@@ -1,0 +1,15 @@
+spring:
+
+  application:
+    name: product-service
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/products
+
+---
+spring:
+  profiles: docker
+#  data:
+ #   mongodb:
+  #    uri: mongodb://root:root@microservice-sample_mongo_net:27017/products
